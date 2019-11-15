@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(closest-side, rgb(46, 65, 114), rgb(79, 98, 142), rgb(120, 135, 171)) no-repeat;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "head head"
+        "icon icon"
+        "status status"
+        "detail1 value1"
+        "detail2 value2"
+        "detail3 value3"
+        "search-input search-input"
+        "foot foot";
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.header {
+    justify-self: center;
+    align-self: center;
+    font-family: Impact, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-shadow: black 2px 2px 3px;
+    grid-area: head / head;
+}
+
+.icon-container {
+    justify-self: center;
+    grid-area: icon / icon;
+}
+
+.status {
+    justify-self: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: status / status;
+    text-decoration: underline;
+}
+
+.detail-name1 {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: detail1;
+}
+
+.detail-name2 {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: detail2;
+}
+
+.detail-name3 {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: detail3;
+}
+
+.value1 {
+    justify-self: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    grid-area: value1;
+}
+
+.value2 {
+    justify-self: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    grid-area: value2;
+}
+
+.value3 {
+    justify-self: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    grid-area: value3;
+}
+
+.search-text-input {
+    justify-self: center;
+    align-self: center;
+    grid-area: search-input / search-input;
+}
+
+a {
+    justify-self: end;
+    align-self: end;
+    grid-area: foot / foot;
+}
