@@ -14,12 +14,13 @@ main {
     height: 100vh;
     grid-template-areas:
         "head head"
-        "icon icon"
+        "icon1 icon1"
+        "search-input search-input"
         "status status"
         "detail1 value1"
         "detail2 value2"
         "detail3 value3"
-        "search-input search-input"
+        "detail4 value4"
         "foot foot";
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
@@ -38,7 +39,7 @@ main {
 
 .icon-container {
     justify-self: center;
-    grid-area: icon / icon;
+    grid-area: icon1 / icon1;
 }
 
 .status {
@@ -78,6 +79,15 @@ main {
     grid-area: detail3;
 }
 
+.detail-name4 {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: detail4;
+}
+
 .value1 {
     justify-self: center;
     align-self: center;
@@ -98,6 +108,14 @@ main {
     color: rgb(255, 255, 255);
     grid-area: value3;
 }
+
+.value4 {
+    justify-self: center;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    grid-area: value4;
+}
+
 
 .search-text-input {
     justify-self: center;

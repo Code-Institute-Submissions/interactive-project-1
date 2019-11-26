@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
     <main>
         <header class="header">
-            <h1>Weather</h1>
+            <h1 class="animated zoomIn">Weather</h1>
         </header>
         <div class="icon-container">
             <canvas id="icon" width="100" height="100"></canvas>
+        </div>
+        <div class="search-text-input">
+            <input type="text" class="search-text" data-city-search placeholder="Enter Location">
         </div>
         <div class="status">Current Weather Status</div>
         <div class="detail-name1">Wind</div>
@@ -22,9 +26,8 @@
         <div class="value2">TBD</div>
         <div class="detail-name3">Precipitation</div>
         <div class="value3">TBD</div>
-        <div class="search-text-input">
-            <input type="text" class="search-text" data-city-search placeholder="Enter Location">
-        </div>
+        <div class="detail-name4">Humidity</div>
+        <div class="value4">TBD</div>
         <a href="https://darksky.net/poweredby" class="darksky">Powered By Dark Sky</a>
     </main>
 </body>
