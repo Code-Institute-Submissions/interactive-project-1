@@ -15,6 +15,7 @@ main {
     grid-template-areas:
         "head head"
         "icon1 icon1"
+        "location location"
         "search-input search-input"
         "status status"
         "detail1 value1"
@@ -40,6 +41,15 @@ main {
 .icon-container {
     justify-self: center;
     grid-area: icon1 / icon1;
+}
+
+.currentLocation {
+    justify-self: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    grid-area: location / location;
 }
 
 .status {
