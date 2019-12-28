@@ -7,7 +7,6 @@
     <title>Weather</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyD013vsYudWgpHGPrKIrw_n13FbWMqOTmU&libraries=places"></script>
     <script defer src="script/skycons.js"></script>
     <script defer src="script/script.js"></script>
 </head>
@@ -20,16 +19,22 @@
             <canvas class="icon" width="120" height="120"></canvas>
         </div>
         <div class="currentLocation">Timezone</div>
-<!--    <div class="search-text-input">
-            <input type="text" class="search-text" placeholder="Enter Location" search-location>
-        </div>
--->
-        <div class="status">Weather Status</div>
+        <select class="dropDown">
+            <option value="newYorkUSA">New York, USA</option>
+            <option value="parisFrance">Paris, France</option>
+            <option value="berlinGermany">Berlin, Germany</option>
+            <option value="losAngelesCalifornia">Los Angeles, California</option>
+            <option value="londonUnitedKingdom">London, United Kingdom</option>
+            <option value="shanghaiChina">Shanghai, China</option>
+            <option value="tokyoJapan">Tokyo, Japan</option>
+            <option value="seoulKorea">Seoul, Korea</option>
+        </select>
+        <!--<div class="status">Weather Status</div>-->
         <div class="detail-name1">Wind Speed</div>
         <div class="value1">TBD</div>
         <div class="detail-name2">Temperature</div>
         <div class="value2">TBD</div>
-        <div class="detail-name3">Precipitation</div>
+        <div class="detail-name3">Summary</div>
         <div class="value3">TBD</div>
         <div class="detail-name4">Humidity</div>
         <div class="value4">TBD</div>

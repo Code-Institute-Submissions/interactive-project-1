@@ -21,7 +21,7 @@ window.addEventListener('load', ()=> {
                 return response.json();
             })
             .then(data => {
-                const {timezone, windSpeed, temperature, summary, humidity, icon} = data.currently;
+                const {windSpeed, temperature, summary, humidity, icon} = data.currently;
                 currentLocation.textContent = data.timezone;
                 value1.textContent = windSpeed;
                 value2.textContent = temperature;
@@ -29,6 +29,7 @@ window.addEventListener('load', ()=> {
                 value4.textContent = humidity;
                 setIcons(icon, document.querySelector('.icon'))
             })
+            //console.log(key)
         });
     }
     function setIcons(icon, iconID){
