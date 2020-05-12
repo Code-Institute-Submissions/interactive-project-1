@@ -14,15 +14,16 @@ main {
     height: 100vh;
     grid-template-areas:
         "head head"
+        "cityName cityName"
         "icon1 icon1"
-        "location location"
+        "weatherDescription weatherDescription"
+        "searchContainer searchContainer"
         "dropDown dropDown"
-/*        "status status"      */
         "detail1 value1"
         "detail2 value2"
         "detail3 value3"
         "detail4 value4"
-        "foot foot";
+        "detail5 value5";
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
 }
@@ -38,20 +39,36 @@ main {
     grid-area: head / head;
 }
 
+#cityName {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    grid-area: cityName / cityName;
+}
+
 .icon-container {
     justify-self: center;
     align-self: center;
     grid-area: icon1 / icon1;
 }
 
-.currentLocation {
+#weatherDescription {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    grid-area: weatherDescription / weatherDescription;
+}
+
+#searchContainer {
     justify-self: center;
     align-self: center;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 25px;
     font-weight: 600;
     color: rgb(255, 255, 255);
-    grid-area: location / location;
+    grid-area: searchContainer / searchContainer;
 }
 
 .dropDown {
@@ -60,19 +77,6 @@ main {
     border-radius: 20%;
     grid-area: dropDown / dropDown;
 }
-
-/*
-.status {
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    grid-area: status / status;
-    text-decoration: underline;
-}
-*/
 
 .detail-name1 {
     justify-self: center;
@@ -114,6 +118,16 @@ main {
     grid-area: detail4;
 }
 
+.detail-name5 {
+    justify-self: center;
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    grid-area: detail5;
+}
+
 .value1 {
     justify-self: center;
     align-self: center;
@@ -146,9 +160,10 @@ main {
     grid-area: value4;
 }
 
-a {
-    justify-self: end;
-    align-self: end;
+.value5 {
+    justify-self: center;
+    align-self: center;
     font-size: 20px;
-    grid-area: foot / foot;
+    color: rgb(255, 255, 255);
+    grid-area: value5;
 }

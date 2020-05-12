@@ -15,30 +15,26 @@
         <header class="header">
             <h1 class="animated zoomIn">Weather</h1>
         </header>
+        <div id="cityName"></div>
         <div class="icon-container">
-            <canvas class="icon" width="120" height="120"></canvas>
+            <img id="iconImage"></img>
         </div>
-        <div class="currentLocation">Timezone</div>
-        <select class="dropDown">
-            <option value="newYorkUSA">New York, USA</option>
-            <option value="parisFrance">Paris, France</option>
-            <option value="berlinGermany">Berlin, Germany</option>
-            <option value="losAngelesCalifornia">Los Angeles, California</option>
-            <option value="londonUnitedKingdom">London, United Kingdom</option>
-            <option value="shanghaiChina">Shanghai, China</option>
-            <option value="tokyoJapan">Tokyo, Japan</option>
-            <option value="seoulKorea">Seoul, Korea</option>
-        </select>
-        <!--<div class="status">Weather Status</div>-->
-        <div class="detail-name1">Wind Speed</div>
-        <div class="value1">TBD</div>
-        <div class="detail-name2">Temperature</div>
-        <div class="value2">TBD</div>
-        <div class="detail-name3">Summary</div>
-        <div class="value3">TBD</div>
-        <div class="detail-name4">Humidity</div>
-        <div class="value4">TBD</div>
-        <a href="https://darksky.net/poweredby" class="darksky">Powered By Dark Sky</a>
+        <div id="weatherDescription"></div>
+        <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="City or Zip Code" id="searchInput">
+            <button class="searchControl" id="searchBtn">Search</button>
+        </div>
+
+        <div class="detail-name1">Temperature</div>
+        <div id="temperature" class="value1">0</div>
+        <div class="detail-name2">Min-Temperature</div>
+        <div id="min-temp" class="value2">0</div>
+        <div class="detail-name3">Max-Temperature</div>
+        <div id="max-temp" class="value3">0</div>
+        <div class="detail-name4">Pressure</div>
+        <div id="pressure" class="value4">0</div>
+        <div class="detail-name5">Humidity</div>
+        <div id="humidity" class="value5">0</div>
     </main>
 </body>
 </html>
