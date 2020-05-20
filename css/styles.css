@@ -14,10 +14,11 @@ main {
     height: 100vh;
     grid-template-areas:
         "head head"
-        "cityName cityName"
         "icon1 icon1"
+        "cityName cityName"
         "weatherDescription weatherDescription"
         "searchContainer searchContainer"
+        "searchButton searchButton"
         "dropDown dropDown"
         "detail1 value1"
         "detail2 value2"
@@ -39,12 +40,9 @@ main {
     grid-area: head / head;
 }
 
-#cityName {
-    justify-self: center;
-    align-self: center;
-    font-family: Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    grid-area: cityName / cityName;
+#iconImage {
+    height: 80px;
+    width: 80px;
 }
 
 .icon-container {
@@ -53,9 +51,17 @@ main {
     grid-area: icon1 / icon1;
 }
 
+#cityName {
+    justify-self: center;
+    align-self: end;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    grid-area: cityName / cityName;
+}
+
 #weatherDescription {
     justify-self: center;
-    align-self: center;
+    align-self: start;
     font-family: Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     grid-area: weatherDescription / weatherDescription;
@@ -65,18 +71,43 @@ main {
     justify-self: center;
     align-self: center;
     font-family: "Trebuchet MS", sans-serif;
-    font-size: 25px;
-    font-weight: 600;
     color: rgb(255, 255, 255);
     grid-area: searchContainer / searchContainer;
 }
 
-.dropDown {
-    justify-self: center;
-    font-size: 15px;
-    border-radius: 20%;
-    grid-area: dropDown / dropDown;
+#searchInput {
+    height: 25px;
+    width: 250px;
+    border-radius: 7px;
 }
+
+.searchButton {
+    justify-self: center;
+    align-self: start;
+    grid-area: searchButton / searchButton;
+}
+
+#searchBtn {
+    padding: 15px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(36, 88, 141);
+    border: none;
+    border-radius: 15px;
+  }
+  
+  #searchBtn:hover {
+      background-color: rgb(23, 75, 128);
+    }
+  
+  #searchBtn:active {
+    background-color: rgb(36, 88, 141);
+    box-shadow: 0 1px #fff;
+    transform: translateY(4px);
+  }
 
 .detail-name1 {
     justify-self: center;
